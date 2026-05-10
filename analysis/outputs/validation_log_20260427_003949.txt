@@ -1,0 +1,145 @@
+======================================================================
+  QRUMBLE Out-of-Sample Validation Runner
+  Started : 20260427_003949
+  Period  : feb2020  duration=53m  rebalance=1y
+  Top     : 30  |  RF=0.6
+  Log     : /Users/aminaenkhbaatar/Desktop/Master/QRUMBLE/search/outputs/validation/validation_log_20260427_003949.txt
+======================================================================
+
+Loading universe  : data-stoxx600/UNIVERSE.2020_2023.pickle
+Loading fundamentals: data-stoxx600/FUNDAMENTALS.2020_2023.pickle
+Loading OHLCV     : data-stoxx600/stoxx600.jan2019_jun2024.pickle
+Data loaded.
+
+
+──────────────────────────────────────────────────────────────────────
+  File   : ../analysis/data/top6_SOM.csv
+  Method : top6_SOM  |  Strategies: 6
+──────────────────────────────────────────────────────────────────────
+
+  [top6_SOM_rank1]  selected_for=Top Sharpe
+  Directions : [-1, -1, 0, 0, 1, -1, 0, 0, 1, -1, -1]
+  Train      : sharpe=1.46  return=29.69  var=-27.63
+  ✅ OOS result: {'roi': 1.7, 'annualized': 0.38, 'mean': 1.97, 'std': 20.73, 'sharpe': 0.07, 'alpha': -34.24, 'alpha_daily': -0.14, 'beta': 1.08, 'var': -33.23, 'var_daily': -2.09, 'tvar': -50.33, 'tvar_daily': -3.17}
+
+  [top6_SOM_rank2]  selected_for=Top Sharpe
+  Directions : [-1, 0, -1, -1, 1, -1, -1, 0, -1, 1, -1]
+  Train      : sharpe=1.34  return=26.9  var=-27.76
+  ✅ OOS result: {'roi': -1.55, 'annualized': -0.35, 'mean': 1.04, 'std': 21.38, 'sharpe': 0.02, 'alpha': -39.29, 'alpha_daily': -0.16, 'beta': 1.11, 'var': -33.43, 'var_daily': -2.11, 'tvar': -49.85, 'tvar_daily': -3.14}
+
+  [top6_SOM_rank3]  selected_for=Top Return
+  Directions : [-1, 0, -1, -1, 0, 1, -1, 0, 0, -1, -1]
+  Train      : sharpe=1.23  return=26.48  var=-30.08
+  ✅ OOS result: {'roi': -4.83, 'annualized': -1.11, 'mean': 1.15, 'std': 23.06, 'sharpe': 0.02, 'alpha': -42.03, 'alpha_daily': -0.17, 'beta': 1.18, 'var': -33.73, 'var_daily': -2.12, 'tvar': -54.9, 'tvar_daily': -3.46}
+
+  [top6_SOM_rank4]  selected_for=Top Return
+  Directions : [-1, -1, -1, 1, -1, -1, -1, 0, 0, 0, -1]
+  Train      : sharpe=1.25  return=26.0  var=-30.06
+  ✅ OOS result: {'roi': 11.19, 'annualized': 2.43, 'mean': 4.36, 'std': 22.6, 'sharpe': 0.17, 'alpha': -25.42, 'alpha_daily': -0.1, 'beta': 1.13, 'var': -35.45, 'var_daily': -2.23, 'tvar': -55.36, 'tvar_daily': -3.49}
+
+  [top6_SOM_rank5]  selected_for=Top VaR
+  Directions : [1, -1, 0, 0, 1, 0, 0, 1, 0, 1, -1]
+  Train      : sharpe=0.9  return=11.02  var=-19.68
+  ✅ OOS result: {'roi': 27.12, 'annualized': 5.58, 'mean': 6.53, 'std': 18.54, 'sharpe': 0.32, 'alpha': -10.39, 'alpha_daily': -0.04, 'beta': 1.0, 'var': -27.59, 'var_daily': -1.74, 'tvar': -45.94, 'tvar_daily': -2.89}
+
+  [top6_SOM_rank6]  selected_for=Top VaR
+  Directions : [1, 0, 0, 0, 1, -1, 1, 0, 0, 1, -1]
+  Train      : sharpe=0.92  return=11.41  var=-20.08
+  ✅ OOS result: {'roi': 42.68, 'annualized': 8.38, 'mean': 8.79, 'std': 17.81, 'sharpe': 0.46, 'alpha': 2.95, 'alpha_daily': 0.01, 'beta': 0.92, 'var': -28.31, 'var_daily': -1.78, 'tvar': -43.76, 'tvar_daily': -2.76}
+
+──────────────────────────────────────────────────────────────────────
+  File   : ../analysis/data/top6_GP.csv
+  Method : top6_GP  |  Strategies: 6
+──────────────────────────────────────────────────────────────────────
+
+  [top6_GP_rank1]  selected_for=Top Sharpe
+  Directions : [-1, -1, -1, -1, 0, 1, 0, 0, 1, 0, -1]
+  Train      : sharpe=1.5  return=32.1  var=-28.75
+  ✅ OOS result: {'roi': -8.69, 'annualized': -2.04, 'mean': 0.01, 'std': 21.86, 'sharpe': -0.03, 'alpha': -45.5, 'alpha_daily': -0.18, 'beta': 1.14, 'var': -31.5, 'var_daily': -1.98, 'tvar': -51.86, 'tvar_daily': -3.27}
+
+  [top6_GP_rank2]  selected_for=Top Sharpe
+  Directions : [-1, -1, 0, -1, -1, 1, 0, 0, 1, 0, -1]
+  Train      : sharpe=1.47  return=32.47  var=-30.2
+  ✅ OOS result: {'roi': -5.08, 'annualized': -1.17, 'mean': 0.69, 'std': 21.74, 'sharpe': 0.0, 'alpha': -41.81, 'alpha_daily': -0.17, 'beta': 1.13, 'var': -32.22, 'var_daily': -2.03, 'tvar': -52.67, 'tvar_daily': -3.32}
+
+  [top6_GP_rank3]  selected_for=Top Return
+  Directions : [-1, -1, 0, -1, 0, -1, 0, 0, 1, 1, -1]
+  Train      : sharpe=1.44  return=29.9  var=-27.5
+  ✅ OOS result: {'roi': 8.79, 'annualized': 1.93, 'mean': 3.63, 'std': 20.98, 'sharpe': 0.14, 'alpha': -27.31, 'alpha_daily': -0.11, 'beta': 1.1, 'var': -29.61, 'var_daily': -1.87, 'tvar': -49.96, 'tvar_daily': -3.15}
+
+  [top6_GP_rank4]  selected_for=Top Return
+  Directions : [-1, -1, -1, -1, 1, 0, 0, 0, 0, 1, -1]
+  Train      : sharpe=1.43  return=29.34  var=-27.04
+  ✅ OOS result: {'roi': -2.81, 'annualized': -0.64, 'mean': 0.8, 'std': 20.98, 'sharpe': 0.01, 'alpha': -40.65, 'alpha_daily': -0.16, 'beta': 1.11, 'var': -31.83, 'var_daily': -2.0, 'tvar': -50.53, 'tvar_daily': -3.18}
+
+  [top6_GP_rank5]  selected_for=Top VaR
+  Directions : [1, -1, -1, 0, 1, 1, 0, 1, 0, 1, -1]
+  Train      : sharpe=0.91  return=11.83  var=-20.59
+  ✅ OOS result: {'roi': 25.03, 'annualized': 5.19, 'mean': 6.1, 'std': 18.05, 'sharpe': 0.3, 'alpha': -11.38, 'alpha_daily': -0.05, 'beta': 0.98, 'var': -27.12, 'var_daily': -1.71, 'tvar': -45.17, 'tvar_daily': -2.85}
+
+  [top6_GP_rank6]  selected_for=Top VaR
+  Directions : [1, -1, 1, 0, 1, -1, 1, 1, -1, 1, 0]
+  Train      : sharpe=0.77  return=9.9  var=-21.53
+  ✅ OOS result: {'roi': 40.66, 'annualized': 8.03, 'mean': 8.78, 'std': 18.3, 'sharpe': 0.45, 'alpha': 0.38, 'alpha_daily': 0.0, 'beta': 0.99, 'var': -28.22, 'var_daily': -1.78, 'tvar': -44.65, 'tvar_daily': -2.81}
+
+──────────────────────────────────────────────────────────────────────
+  File   : ../analysis/data/top6_MOGA.csv
+  Method : top6_MOGA  |  Strategies: 6
+──────────────────────────────────────────────────────────────────────
+
+  [top6_MOGA_rank1]  selected_for=Top Sharpe
+  Directions : [-1, -1, -1, -1, 0, 1, 0, 0, 1, 0, -1]
+  Train      : sharpe=1.5  return=32.1  var=-28.75
+  ✅ OOS result: {'roi': -8.69, 'annualized': -2.04, 'mean': 0.01, 'std': 21.86, 'sharpe': -0.03, 'alpha': -45.5, 'alpha_daily': -0.18, 'beta': 1.14, 'var': -31.5, 'var_daily': -1.98, 'tvar': -51.86, 'tvar_daily': -3.27}
+
+  [top6_MOGA_rank2]  selected_for=Top Sharpe
+  Directions : [-1, -1, -1, -1, 0, 1, -1, 0, 0, 0, -1]
+  Train      : sharpe=1.42  return=31.38  var=-29.2
+  ✅ OOS result: {'roi': 6.27, 'annualized': 1.39, 'mean': 3.09, 'std': 21.54, 'sharpe': 0.12, 'alpha': -30.65, 'alpha_daily': -0.12, 'beta': 1.12, 'var': -33.14, 'var_daily': -2.09, 'tvar': -53.22, 'tvar_daily': -3.35}
+
+  [top6_MOGA_rank3]  selected_for=Top Return
+  Directions : [-1, -1, -1, -1, 0, 1, 0, 0, 0, 0, -1]
+  Train      : sharpe=1.39  return=30.5  var=-29.51
+  ✅ OOS result: {'roi': -1.75, 'annualized': -0.4, 'mean': 1.44, 'std': 22.28, 'sharpe': 0.04, 'alpha': -39.48, 'alpha_daily': -0.16, 'beta': 1.15, 'var': -32.89, 'var_daily': -2.07, 'tvar': -53.47, 'tvar_daily': -3.37}
+
+  [top6_MOGA_rank4]  selected_for=Top Return
+  Directions : [-1, -1, 0, -1, 0, 1, 0, 0, 1, -1, -1]
+  Train      : sharpe=1.39  return=30.22  var=-28.72
+  ✅ OOS result: {'roi': -2.43, 'annualized': -0.55, 'mean': 1.1, 'std': 20.83, 'sharpe': 0.02, 'alpha': -38.27, 'alpha_daily': -0.15, 'beta': 1.09, 'var': -31.42, 'var_daily': -1.98, 'tvar': -49.53, 'tvar_daily': -3.12}
+
+  [top6_MOGA_rank5]  selected_for=Top VaR
+  Directions : [1, 0, -1, 0, 1, 0, 1, 0, 0, 0, -1]
+  Train      : sharpe=0.86  return=10.71  var=-20.47
+  ✅ OOS result: {'roi': 31.55, 'annualized': 6.41, 'mean': 6.78, 'std': 17.45, 'sharpe': 0.35, 'alpha': -5.84, 'alpha_daily': -0.02, 'beta': 0.92, 'var': -27.01, 'var_daily': -1.7, 'tvar': -42.1, 'tvar_daily': -2.65}
+
+  [top6_MOGA_rank6]  selected_for=Top VaR
+  Directions : [1, 1, -1, 0, 0, 1, 1, 1, 0, 0, 0]
+  Train      : sharpe=0.84  return=10.59  var=-21.04
+  ✅ OOS result: {'roi': 12.63, 'annualized': 2.73, 'mean': 3.69, 'std': 17.95, 'sharpe': 0.17, 'alpha': -22.4, 'alpha_daily': -0.09, 'beta': 0.98, 'var': -27.38, 'var_daily': -1.73, 'tvar': -44.47, 'tvar_daily': -2.8}
+
+======================================================================
+  ✅ Results saved → /Users/aminaenkhbaatar/Desktop/Master/QRUMBLE/search/outputs/validation/validation_results_20260427_003949.csv
+  ✅ Log saved     → /Users/aminaenkhbaatar/Desktop/Master/QRUMBLE/search/outputs/validation/validation_log_20260427_003949.txt
+  Total strategies run: 18
+
+  Summary:
+    strategy_id selected_for  train_sharpe  val_sharpe  train_return  val_return  train_var  val_var
+ top6_SOM_rank1   Top Sharpe          1.47        0.07         29.69        0.38     -27.63   -33.23
+ top6_SOM_rank2   Top Sharpe          1.34        0.02         26.90       -0.35     -27.76   -33.43
+ top6_SOM_rank3   Top Return          1.23        0.02         26.48       -1.11     -30.08   -33.73
+ top6_SOM_rank4   Top Return          1.25        0.17         26.00        2.43     -30.06   -35.45
+ top6_SOM_rank5      Top VaR          0.90        0.32         11.02        5.58     -19.68   -27.59
+ top6_SOM_rank6      Top VaR          0.92        0.46         11.41        8.38     -20.08   -28.31
+  top6_GP_rank1   Top Sharpe          1.50       -0.03         32.10       -2.04     -28.75   -31.50
+  top6_GP_rank2   Top Sharpe          1.47        0.00         32.47       -1.17     -30.20   -32.22
+  top6_GP_rank3   Top Return          1.44        0.14         29.90        1.93     -27.50   -29.61
+  top6_GP_rank4   Top Return          1.43        0.01         29.34       -0.64     -27.04   -31.83
+  top6_GP_rank5      Top VaR          0.91        0.30         11.83        5.19     -20.59   -27.12
+  top6_GP_rank6      Top VaR          0.77        0.45          9.90        8.03     -21.53   -28.22
+top6_MOGA_rank1   Top Sharpe          1.50       -0.03         32.10       -2.04     -28.75   -31.50
+top6_MOGA_rank2   Top Sharpe          1.42        0.12         31.38        1.39     -29.20   -33.14
+top6_MOGA_rank3   Top Return          1.39        0.04         30.50       -0.40     -29.51   -32.89
+top6_MOGA_rank4   Top Return          1.39        0.02         30.22       -0.55     -28.72   -31.42
+top6_MOGA_rank5      Top VaR          0.86        0.35         10.71        6.41     -20.47   -27.01
+top6_MOGA_rank6      Top VaR          0.84        0.17         10.59        2.73     -21.04   -27.38
+======================================================================

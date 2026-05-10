@@ -1,0 +1,9 @@
+# Python dependencies
+# Install with: pip install -r requirements.txt
+# Note: QRUMBLE must be installed separately (see README.md)
+
+numpy
+pandas
+matplotlib
+scikit-optimize       # skopt — Gaussian Process surrogate optimization
+pymoo                 # NSGA-II / multi-objective genetic algorithm

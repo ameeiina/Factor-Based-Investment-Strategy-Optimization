@@ -1,0 +1,7 @@
+rank,selected_for,Yield,ROC,EarningsYield,RS(6m),ROA,ΔROA,AccrualRatio,ΔLTDebt-to-Assets,ΔCurrentRatio,ΔOpMgn,ΔAssetTurnover,sharpe,annualized,var
+1,Top Sharpe,-1,-1,-1,-1,0,1,0,0,1,0,-1,1.5,32.1,-28.75
+2,Top Sharpe,-1,-1,0,-1,-1,1,0,0,1,0,-1,1.47,32.47,-30.2
+3,Top Return,-1,-1,0,-1,0,-1,0,0,1,1,-1,1.44,29.9,-27.5
+4,Top Return,-1,-1,-1,-1,1,0,0,0,0,1,-1,1.43,29.34,-27.04
+5,Top VaR,1,-1,-1,0,1,1,0,1,0,1,-1,0.91,11.83,-20.59
+6,Top VaR,1,-1,1,0,1,-1,1,1,-1,1,0,0.77,9.9,-21.53

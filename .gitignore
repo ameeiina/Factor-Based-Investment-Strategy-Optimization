@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Runtime outputs (generated at run time)
+methods/moga/outputs/taboo_set.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+.claude/
