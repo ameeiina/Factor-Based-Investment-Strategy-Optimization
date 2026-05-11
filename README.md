@@ -1,8 +1,12 @@
 # Factor-Based Investment Strategy Optimization
 
-Source code for the master thesis *Self-Organizing Maps, Gaussian Processes and Genetic Algorithms Applied to Factor-Based Investment Strategy Optimization*, TU Berlin, 2026.
+Source code for the master thesis *Optimization of Investment Strategies
+Using Self-Organizing Maps and Advanced
+Search Techniques*, TU Berlin, 2026.
 
-Three optimization methods search for the best combination of 11 fundamental and momentum factors applied to STOXX 600 stocks (2015–2019 training, 2020–2023 out-of-sample). Strategies are evaluated using the QRUMBLE backtesting framework.
+The complete master thesis is not publicly hosted but can be provided upon request through direct contact via email. (amina.e.7a@gmail.com)
+
+Three optimization methods search for the best combination of 11 fundamental and momentum factors applied to STOXX 600 stocks (2015–2019 training, 2020–2023 out-of-sample). Strategies are evaluated using the QRUMBLE backtesting framework by Dr. Nuno Marques and Dr. Hugo dos Santos from NOVA Links based in Lisbon, Portugal.
 
 ---
 
@@ -105,3 +109,5 @@ conda run -n Q python run_validation.py data/top6_SOM.csv data/top6_GP.csv data/
 | `qrumble` | Backtesting (proprietary, not in requirements.txt) |
 
 Java 11+ and Maven are required to build and run UbiSOM (`methods/som/UbiSOM/`).
+
+Claude Code was used to create this repository.
